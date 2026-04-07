@@ -14,9 +14,11 @@ function searchItems(request, response, next) {
         }
 
         // Filter results based on query parameters
-        if (q) {
-            const query = q.toLowerCase()    
-            results = results.filter(eachItem => eachItem.productName.toLowerCase().includes(query))
+        if (q && q.trim() !== "") {
+          const query = q.toLowerCase();
+          results = results.filter((eachItem) =>
+            eachItem.productName.toLowerCase().includes(query),
+          );
         }
 
         // Filter by category (case-insensitive)
