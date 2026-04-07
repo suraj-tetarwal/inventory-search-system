@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Search - Zeerostock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1 class="header-title">Inventory Search</h1>
+        <p class="header-text">Find surplus products from multiple suppliers</p>
+    </header>
+
+    <main class="container">
+        <section class="search-section">
+            <form id="searchForm" class="search-form">
+                <div class="form-group">
+                    <label for="productSearch" class="form-group-label">Product Name</label>
+                    <input 
+                        type="text" 
+                        id="productSearch" 
+                        name="q" 
+                        placeholder="Search by product name..."
+                        aria-label="Search product name"
+                        class="form-group-input"
+                    >
+                </div>
+                <div class="filter-group">
+                    <div class="form-group">
+                        <label for="categoryFilter" class="form-group-label">Category</label>
+                        <select id="categoryFilter" name="category" class="form-group-select">
+                            <option value="">All Categories</option>
+                            <option value="Furniture">Furniture</option>
+                            <option value="Electronics">Electronics</option>
+                            <option value="Stationery">Stationery</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="minPrice" class="form-group-label">Min Price</label>
+                        <input 
+                            type="number" 
+                            id="minPrice" 
+                            name="minPrice" 
+                            placeholder="0"
+                            min="0"
+                            class="form-group-input"
+                        >
+                    </div>
+                    <div class="form-group">
+                        <label for="maxPrice" class="form-group-label">Max Price</label>
+                        <input 
+                            type="number" 
+                            id="maxPrice" 
+                            name="maxPrice" 
+                            placeholder="10000"
+                            min="0"
+                            class="form-group-input"
+                        >
+                    </div>
+                </div>
+                <div class="button-group">
+                    <button type="submit" class="button primary">Search</button>
+                    <button type="reset" class="button secondary">Clear</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="results-section">
+            <div id="resultsContainer" class="results-container" style="display: none;">
+                <div class="results-header">
+                    <h2 class="results-header-title">Search Results</h2>
+                    <span id="resultCount" class="results-row-count"></span>
+                </div>
+
+                <table class="results-table">
+                    <caption class="results-table-caption">Inventory Results</caption>
+                    <thead class="results-table-header">
+                        <tr class="results-table-row">
+                            <th class="results-table-header-cell">Product Name</th>
+                            <th class="results-table-header-cell">Category</th>
+                            <th class="results-table-header-cell">Price</th>
+                            <th class="results-table-header-cell">Supplier</th>
+                        </tr>
+                    </thead>
+                    <tbody id="resultsBody" class="results-table-body">
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="loadingSpinner" class="state-container" style="display: none;">
+                <div class="spinner"></div>
+                <p class="loading-text">Searching inventory...</p>
+            </div>
+
+            <div id="noResults" class="state-container" style="display: none;">
+                <h3 class="empty-state-title">No results found</h3>
+                <p class="empty-state-text">Try adjusting your search filters.</p>
+            </div>
+
+            <div id="errorMessage" class="state-container" style="display: none;">
+                <span id="errorText" class="error-text"></span>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Inventory Search Project • Zeerostock Assignment</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+[
+  {
+    "id": 1,
+    "productName": "Office Chair",
+    "category": "Furniture",
+    "price": 1200,
+    "supplier": "ABC Traders"
+  },
+  {
+    "id": 2,
+    "productName": "Desk Table",
+    "category": "Furniture",
+    "price": 3000,
+    "supplier": "WoodWorks"
+  },
+  {
+    "id": 3,
+    "productName": "Bookshelf",
+    "category": "Furniture",
+    "price": 2500,
+    "supplier": "Home Interiors"
+  },
+  {
+    "id": 4,
+    "productName": "Laptop",
+    "category": "Electronics",
+    "price": 55000,
+    "supplier": "Tech Supplies"
+  },
+  {
+    "id": 5,
+    "productName": "Wireless Mouse",
+    "category": "Electronics",
+    "price": 800,
+    "supplier": "Tech Supplies"
+  },
+  {
+    "id": 6,
+    "productName": "Keyboard",
+    "category": "Electronics",
+    "price": 1500,
+    "supplier": "Gadget Hub"
+  },
+  {
+    "id": 7,
+    "productName": "Monitor",
+    "category": "Electronics",
+    "price": 12000,
+    "supplier": "Gadget Hub"
+  },
+  {
+    "id": 8,
+    "productName": "Pen Pack",
+    "category": "Stationery",
+    "price": 100,
+    "supplier": "Office Mart"
+  },
+  {
+    "id": 9,
+    "productName": "Notebook Set",
+    "category": "Stationery",
+    "price": 300,
+    "supplier": "Office Mart"
+  },
+  {
+    "id": 10,
+    "productName": "Stapler",
+    "category": "Stationery",
+    "price": 200,
+    "supplier": "Supply Co"
+  },
+  {
+    "id": 11,
+    "productName": "Printer Paper Bundle",
+    "category": "Stationery",
+    "price": 600,
+    "supplier": "Supply Co"
+  },
+  {
+    "id": 12,
+    "productName": "Filing Cabinet",
+    "category": "Furniture",
+    "price": 4000,
+    "supplier": "ABC Traders"
+  },
+  {
+    "id": 13,
+    "productName": "USB Flash Drive",
+    "category": "Electronics",
+    "price": 500,
+    "supplier": "Tech Supplies"
+  },
+  {
+    "id": 14,
+    "productName": "Desk Lamp",
+    "category": "Electronics",
+    "price": 900,
+    "supplier": "Bright Lights"
+  },
+  {
+    "id": 15,
+    "productName": "Whiteboard",
+    "category": "Furniture",
+    "price": 1800,
+    "supplier": "Office Essentials"
+  }
+]
