@@ -14,7 +14,7 @@ const noResults = document.getElementById("noResults");
 const errorMessage = document.getElementById("errorMessage");
 const errorText = document.getElementById("errorText");
 
-const BASE_URL = "http://localhost:3000";
+const BASE_URL = "https://inventory-search-system-fe1e.onrender.com";
 
 // hide all state containers 
 function hideAll() {
